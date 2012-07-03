@@ -1,0 +1,54 @@
+Track the source commits here:
+https://github.com/guardianproject/Gibberbot/commits/master#
+
+0.0.7 / 2012-01-17
+- updated translation strings
+- major fixes to connection stability by devrandom
+- user interface clean-ness aka "turn to the light side" by n8fr8
+- removed unintentional low level debug output
+- added new sasl auth mechanism support
+- added locale selection menu option
+- improved translations for arabic, german, spanish and dutch
+
+2011-09-26
+- 0.0.5 RC3/5 release
+- updated cacerts file to include CACerts.org root
+- used correct version of asmack library for Android
+- tweaked support of Gmail and Facebook specific login/auth weirdness
+
+2011-09-20
+- 0.0.5 RC2 release
+- turning TLS verify off now also turns of domain name checking in self-signed certs
+- fixed custom port persistence issue; you can use 5223 to your hearts content
+- UI tweaks around enabling/disabling based on logged in and OTR state
+- added in matching of Root CA common name with verification against cacerts.bks
+- default now to PLAIN AUTH off
+
+2011-09-15
+- 0.0.5 RC1 release
+- Replaced Smack's TLS TrustManager with custom imp for Android / BKS keystore
+- Bundled in own cacert.bks keystore file to manage trusted Root CAs sep from device-wide version
+- Fixed support for DNS SRV record lookups
+- Stopped using Smack's reconnection manager, and now use custom Android reconn/status code
+- Changed primary contact/buddy UI to filter list mode
+- Added back in status selector and message edit text field
+- Improved support for OTR, including fingerprint display on activity screen, and auto-attempt on connect
+- Upgraded to Smack 3.2.1 release
+
+2011-02-28 
+- 0.0.3 RC1 release
+- Major overhaul of the user interface, including new setup wizard, and key verification display
+- A huge amount of small buf fixes and tweaks
+
+2010-12-14
+- tagged the source! :) 
+
+2010-11-23
+- added "General" contact list on loadContacts() call to the mContactList array
+- added notifyPresenceUpdate for "General" contacts list
+- Patches 1-3/3 by: Adrian-Ken Rueegsegger <ken@codelabs.ch>
+-- Contacts which have no assigned group are put into the default group.
+-- Rename default list to General
+-- Factor out reading of contacts into container to private fillContacts() function.
+- fixed app name and ensured build is working on Android 1.5 and up 
+- add support for scrollview in Account Activity; final button was getting squished in landscape mode 
